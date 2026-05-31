@@ -22,6 +22,7 @@ body {
     color: var(--cor-secundaria);
      background-color: var(--cor-escuro);
      padding-top: 120px;
+     overflow-x: hidden;
 
 }
 
@@ -29,7 +30,7 @@ body {
     position: fixed;
 
     top: 0;
-    left: ;
+    left: 0;
 
     width: 100%;
     height: 100vh;
@@ -268,4 +269,52 @@ body {
 
 .botao-form:hover{
     transform: scale(1.05);
+}
+
+@media (max-width: 768px){
+
+    .menu{
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .foto-cabeçalho{
+        width: 220px;
+        height: 220px;
+    }
+
+    .sobre-titulo,
+    .projetos-titulo,
+    .contato-titulo{
+        font-size: 2rem;
+    }
+
+    .sobre{
+        padding: 1rem;
+    }
+
+    .caixa-sobre{
+        padding: 1.5rem;
+    }
+
+    .sobre-paragrafo{
+        font-size: 1rem;
+    }
+
+    .projetos-caixa{
+        grid-template-columns: 1fr;
+    }
+
+    .projetos{
+        padding: 4rem 1rem;
+    }
+
+    .contato{
+        padding: 4rem 1rem;
+    }
+
+    .formulario-contato{
+        max-width: 100%;
+    }
+
 }
