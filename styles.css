@@ -26,6 +26,14 @@ body {
 
 }
 
+h1{
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+p{
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
 #vanta-bg {
     position: fixed;
 
@@ -61,6 +69,10 @@ body {
     font-weight: 500;
     position: relative;
     padding: 0.5rem 0;
+}
+
+img{
+    max-width: 100%;
 }
 
 .menu-link::after {
@@ -273,14 +285,32 @@ body {
 
 @media (max-width: 768px){
 
+    body{
+        padding-top: 160px;
+    }
+
+    .navegacao{
+        padding: 1rem;
+    }
+
     .menu{
         gap: 1rem;
         flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .menu-link{
+        font-size: 0.9rem;
     }
 
     .foto-cabeçalho{
-        width: 220px;
-        height: 220px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .cabeçalho{
+        padding: 1rem;
+        text-align: center;
     }
 
     .sobre-titulo,
@@ -294,19 +324,40 @@ body {
     }
 
     .caixa-sobre{
-        padding: 1.5rem;
+        width: 100%;
+        padding: 1.2rem;
     }
 
     .sobre-paragrafo{
         font-size: 1rem;
-    }
-
-    .projetos-caixa{
-        grid-template-columns: 1fr;
+        line-height: 1.6;
     }
 
     .projetos{
         padding: 4rem 1rem;
+    }
+
+    .projetos-caixa{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .projetos-card{
+        width: 100%;
+    }
+
+    .projetos-imagem{
+        height: 180px;
+    }
+
+    .info-projetos{
+        font-size: 1.1rem;
+        padding: 0.5rem;
+    }
+
+    .paragrafo-projetos{
+        font-size: 0.95rem;
+        padding: 0 1rem 1rem;
     }
 
     .contato{
@@ -315,6 +366,17 @@ body {
 
     .formulario-contato{
         max-width: 100%;
+        padding: 1.2rem;
+    }
+
+    .campo-form,
+    .text-form{
+        font-size: 1rem;
+    }
+
+    .botao-form{
+        width: 100%;
     }
 
 }
+
